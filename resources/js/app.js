@@ -83,8 +83,8 @@ window.Vue = require('vue').default;
 
 // import header
 Vue.component('container', require('./components/nav/TheContainer').default);
-Vue.component('vue-navbar', require('./components/nav/TheSideBar').default);
-Vue.component('vue-footer', require('./components/nav/TheFooter').default);
+//Vue.component('vue-navbar', require('./components/nav/TheSideBar').default);
+//Vue.component('vue-footer', require('./components/nav/TheFooter').default);
 
 const app = new Vue({
     el: '#app',
