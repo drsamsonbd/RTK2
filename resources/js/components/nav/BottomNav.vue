@@ -11,14 +11,14 @@
       options: [
         {
           id: 1,
-          icon: "fas fa-home",
+          icon: "fas fa-home fa-2x",
           title: "Home",
            path: { name: "ScanPage" },
         },
-        { id: 2, icon: "fas fa-wallet", title: "Wallet" },
+        { id: 2, icon: "fas fa-wallet fa-2x", title: "Wallet" },
         {
           id: 3,
-          icon: "fas fa-plus",
+          icon: "fas fa-plus fa-2x",
           title: "Setting",
           childs: [
             { id: 301, icon: "fas fa-bookmark", title: "Bookmarks" },
@@ -28,16 +28,20 @@
           ],
         },
         { id: 4, icon: "fas fa-bell", title: "Notification", badge: 15 },
-        { id: 5, icon: "fas fa-user", title: "Account" },
+        { id: 5, icon: "fas fa-user fa-2x", title: "Account" ,
+        childs: [
+            { id: 501, icon: "fas fa-bookmark fa-2x", title: "Log out" }
+            ],
+        },
       ],
 
 color: {
   type: String,
-  default: "#42A5F5",
+  default: "#60F542",
 },
 badgeColor: {
   type: String,
-  default: "#FBC02D",
+  default: "#72FB2D",
 },
     }),
   };

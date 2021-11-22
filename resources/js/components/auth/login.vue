@@ -46,6 +46,7 @@
                             </router-link>
 					</div>
 				</form>
+
 			</div>
 		</div>
 	</div>
@@ -77,7 +78,8 @@ data(){
               icon: 'success',
               title: 'Signed in successfully'
 })
-               window.location.href = 'api/UserPage';
+             this.$router.push({name: 'ScanPage'})
+ window.location.reload() 
             })
            .catch(()=>{
             Toast.fire({

@@ -16,7 +16,7 @@ let race= require('./components/settings/race.vue').default;
 let area= require('./components/settings/area.vue').default;
 let district= require('./components/settings/district.vue').default;
 let nationality= require('./components/settings/nationality.vue').default;
-
+let ScanPage= require('./components/user/ScanPage.vue').default;
 //page
 let landing= require('./components/Landing.vue').default;
 
@@ -39,6 +39,7 @@ export const routes = [
     { path: '/area', component:area , name:'area' },
     { path: '/district', component:district , name:'district' },
     { path: '/nationality', component: nationality, name:'nationality' },
+    { path: '/scanpage', component: ScanPage, name:'ScanPage' },  
 
     
     

@@ -8,7 +8,7 @@
   <meta name="csrf-token" content="{{ csrf_token() }}">
 
   <title>{{ config('app.name', 'Laravel') }}</title>
-  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+   <link rel="stylesheet"  href="assets/css/bootstrap.min.css">
     <!-- Animate CSS -->
     <link rel="stylesheet" href="assets/css/animate.css">
     <!-- Meanmenu CSS -->

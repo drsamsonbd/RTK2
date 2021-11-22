@@ -1,12 +1,18 @@
 <template>
 <div>
 <!--header-->
-<div  v-if="!user">
-<Landing></Landing>
+
+
+<div  v-if="roles ==='admin'">
+<admin-header></admin-header>
+</div>
+
+<div  v-else-if="roles ==='user'">
+<user-header></user-header>
 </div>
 
 <div  v-else>
-<user-header></user-header>
+<Landing></Landing>
 </div>
 <!--/header-->
 
@@ -19,6 +25,7 @@
 </template>
 
 <script>
+import AdminHeader from './admin-header'
 
 
 //import ComponentA from './TheSideBar'
@@ -34,7 +41,8 @@ export default {
    // ComponentA,
    // ComponentC,
     Landing,
-        UserHeader
+        UserHeader,
+        AdminHeader
   },
 
 
